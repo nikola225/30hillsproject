@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30Hills Task</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>30Hills Shop Task</h1>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button onclick="searchProducts()">Search</button>
+    </div>
+
+    <div class="filter-bar">
+        <select id="categoryFilter" onchange="filterProducts()">
+          <option value="all">All Categories</option>
+          <option value="accessories">Accessories</option>
+          <option value="apparel">Apparel</option>
+		  <option value="bags">Bags</option>
+		  <option value="drinkware">Drinkware</option>
+		  <option value="office">Office</option>
+		  <option value="shop-by-brand">Shop by brand</option>
+        </select>
+    </div>
+
+    <div class="sort-by">
+        <label for="sortBySelect">Sort by:</label>
+        <select id="sortBySelect">
+          <option value="price-asc">Price (low to high)</option>
+          <option value="price-desc">Price (high to low)</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="items">
+            <h2>Products</h2>
+            <div id="product-list"></div>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            
+            <div class="cart-items"></div>
+        
+            <div class="total">Total: $0.00</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
